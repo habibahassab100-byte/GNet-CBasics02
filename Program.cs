@@ -1,6 +1,7 @@
 ﻿using System.Drawing;
 using System.Runtime.Intrinsics.X86;
 using System.Text;
+using System.Timers;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assignment_two
@@ -115,13 +116,23 @@ namespace Assignment_two
             #endregion
             #region Question thirteen
             // Using the same books array, use a while loop to print every book title
-            string[] books = { "clean code", "the pragmatic programmer", "refactoring" };
-            int i = 0;
-            while (i < books.Length)
-            {
-                Console.WriteLine($"{i + 1}. {books[i]}");
+            //string[] books = { "clean code", "the pragmatic programmer", "refactoring" };
+            //int i = 0;
+            //while (i < books.Length)
+            //{
+            //    Console.WriteLine($"{i + 1}. {books[i]}");
+            //    i++;
+            //}
+            #endregion
+            #region Question fourteen
+            // Write a do -while loop that prints "Checking book..." exactly 3 times.
+            int num = 3;
+            int i = 0; 
+            do {
+                Console.WriteLine($"Checking book....");
                 i++;
-            }
+            }while (i < num);
+
             #endregion
         }
     } }
