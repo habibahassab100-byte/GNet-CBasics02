@@ -144,18 +144,31 @@ namespace Assignment_two
             //}
             #endregion
             #region Question sixteen
-           // Using the same books array, loop through it and print each title, but stop completely(break) once
-           //you reach "Refactoring".
-            string[] books = { "clean code", "the pragmatic programmer", "refactoring" };
-            for (int i = 0; i < books.Length; i++)
-            {
-                if (books[i] == "refactoring")
-                {
-                    break;
-                }
-                Console.WriteLine(books[i]);
-            }
+            // Using the same books array, loop through it and print each title, but stop completely(break) once
+            //you reach "Refactoring".
+            //string[] books = { "clean code", "the pragmatic programmer", "refactoring" };
+            //for (int i = 0; i < books.Length; i++)
+            //{
+            //    if (books[i] == "refactoring")
+            //    {
+            //        break;
+            //    }
+            //    Console.WriteLine(books[i]);
+            //}
             #endregion
+            #region Question seventeen
+            // Using the same books array, print every title except "The Pragmatic Programmer"(skip it with
+            //continue, don't stop the loop)
+            string[] books = { "clean code", "the pragmatic programmer", "refactoring" };
+            foreach (string book in books)
+            {
+                if (book == "the pragmatic programmer")
+                {
+                    continue;
+                }
+                Console.WriteLine(book);
+            }
 
+            #endregion
         }
     } }
