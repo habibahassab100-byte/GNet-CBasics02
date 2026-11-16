@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Runtime.Intrinsics.X86;
 using System.Text;
 
 namespace Assignment_two
@@ -27,11 +28,20 @@ namespace Assignment_two
             #region Question three
             //Create a StringBuilder, Append() the text "Book List", then Append() " - Updated" onto the same
             //object.Print the final result.
+            //StringBuilder str = new StringBuilder();
+            //str.Append("Book List");
+            //str.Append(" - Updated");
+            //Console.WriteLine(str.ToString());
+
+            #endregion
+
+            #region Question four
+            //Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library".
+            //Print the result.
             StringBuilder str = new StringBuilder();
             str.Append("Book List");
-            str.Append(" - Updated");
-            Console.WriteLine(str.ToString());
-
+            str.Replace("Book List", "Library");
+            Console.WriteLine(str);
             #endregion
 
         }
