@@ -89,15 +89,20 @@ namespace Assignment_two
             #region Question ten
             //Given string title = "Refactoring";, write a switch statement that prints "Great choice!" if the title is 
             //"Clean Code", "Nice pick!" if it's "Refactoring", and "Never heard of it" for anything else.
-            string title = "Refactoring";
-            string str = title switch
-            {
-                "Clean Code" => "Great choice!",
-                "Refactoring" => "Nice pick!",
-                _ => "Never heard of it"
-            };
-            Console.WriteLine(str);
+            //string title = "Refactoring";
+            //string str = title switch
+            //{
+            //    "Clean Code" => "Great choice!",
+            //    "Refactoring" => "Nice pick!",
+            //    _ => "Never heard of it"
+            //};
+            //Console.WriteLine(str);
             #endregion
-            
+            #region Question eleven
+            int pages = 464;
+            string msg= pages>300? "long book" :"short book";
+            Console.WriteLine(msg);
+            #endregion
+
         }
     } }
