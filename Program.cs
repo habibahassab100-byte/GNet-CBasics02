@@ -38,12 +38,20 @@ namespace Assignment_two
             #region Question four
             //Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library".
             //Print the result.
-            StringBuilder str = new StringBuilder();
-            str.Append("Book List");
-            str.Replace("Book List", "Library");
-            Console.WriteLine(str);
+            //StringBuilder str = new StringBuilder();
+            //str.Append("Book List");
+            //str.Replace("Book List", "Library");
+            //Console.WriteLine(str);
             #endregion
 
+            #region Question five
+            // Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code,
+            //Pages: 464" using the + operator
+            string title = "Clean Code";
+            int pages = 464;
+            string sentence = "Book: " + title + ", Pages: " + pages;
+            Console.WriteLine(sentence);
+            #endregion
         }
     }
 }
