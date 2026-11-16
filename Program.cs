@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Text;
 
 namespace Assignment_two
 {
@@ -17,11 +18,22 @@ namespace Assignment_two
             #endregion
             #region Question two
             //Declare two separate string variables, both set to the literal "Clean Code".Use ReferenceEquals()
-              //to check if they point to the same object in memory
-              string title1 = "Clean Code";
-            string title2 = "Clean Code";
-            Console.WriteLine(ReferenceEquals(title1, title2));
+            //to check if they point to the same object in memory
+            //  string title1 = "Clean Code";
+            //string title2 = "Clean Code";
+            //Console.WriteLine(ReferenceEquals(title1, title2));
             #endregion
+
+            #region Question three
+            //Create a StringBuilder, Append() the text "Book List", then Append() " - Updated" onto the same
+            //object.Print the final result.
+            StringBuilder str = new StringBuilder();
+            str.Append("Book List");
+            str.Append(" - Updated");
+            Console.WriteLine(str.ToString());
+
+            #endregion
+
         }
     }
 }
