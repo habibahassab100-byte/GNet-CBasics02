@@ -1,6 +1,7 @@
 ﻿using System.Drawing;
 using System.Runtime.Intrinsics.X86;
 using System.Text;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assignment_two
 {
@@ -99,10 +100,18 @@ namespace Assignment_two
             //Console.WriteLine(str);
             #endregion
             #region Question eleven
-            int pages = 464;
-            string msg= pages>300? "long book" :"short book";
-            Console.WriteLine(msg);
+            //int pages = 464;
+            //string msg= pages>300? "long book" :"short book";
+            //Console.WriteLine(msg);
             #endregion
-
+            #region Question twelve  
+            // Given string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };, use a for loop
+            //to print each book with its position number, like 1.Clean Code.
+            string[] books = { "clean code", "the pragmatic programmer", "refactoring" };
+            for (int i = 0; i < books.Length; i++)
+            {
+                Console.WriteLine($"{i+1}. {books[i]}");
+            }
+            #endregion
         }
     } }
